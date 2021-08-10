@@ -237,7 +237,6 @@ hr {
 }
 .w3-image {
   max-width: 100%;
-  height: auto;
 }
 img {
   vertical-align: middle;
@@ -484,6 +483,11 @@ a {
   display: block;
   outline: 0;
 }
+
+.nav-options-container {
+  margin-top: 11px;
+}
+
 .w3-bar .w3-dropdown-hover,
 .w3-bar .w3-dropdown-click {
   position: static;
