@@ -244,6 +244,11 @@ img {
 a {
   color: inherit;
 }
+
+.header-img {
+  zoom: 0.5;
+}
+
 .w3-table,
 .w3-table-all {
   border-collapse: collapse;
