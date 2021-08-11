@@ -5,7 +5,7 @@ class ServiceContainer extends React.Component {
     render(){
         return(
             <>
-                <div className="w3-container w3-padding-32" id="about">
+                <div className="w3-container w3-padding-32" id="service">
                     <h3 className="w3-border-bottom w3-border-light-grey w3-padding-16">Services</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip

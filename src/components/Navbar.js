@@ -8,7 +8,7 @@ const Navbar = () => {
             <a href="#home" className="w3-bar-item"><img src={logo} alt="ATK" style={{ "height": "50px"}}/></a>
             <div className="w3-right w3-hide-small nav-options-container">                
                 <a href="#about" className="w3-bar-item">About</a>
-                <a href="#serviceContainer" className="w3-bar-item">Services</a>
+                <a href="#service" className="w3-bar-item">Services</a>
                 <a href="#projects" className="w3-bar-item">Projects</a>
                 <a href="#contact" className="w3-bar-item">Contact</a>
             </div>
