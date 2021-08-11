@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar"
 import Header from './components/Header'
 import ProjectsContainer from './components/ProjectsContainer'
 import AboutContainer from './components/AboutContainer'
+import ServiceContainer from './components/ServiceContainer'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import './index.css';
@@ -26,6 +27,11 @@ ReactDOM.render(
 ReactDOM.render(
     <AboutContainer />,
     document.getElementById("aboutContainer")
+)
+
+ReactDOM.render(
+    <ServiceContainer />,
+    document.getElementById("serviceContainer")
 )
 
 ReactDOM.render(
