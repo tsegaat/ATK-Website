@@ -727,8 +727,8 @@ a {
   }
 
   .header-img {
-    zoom: 0.8;
-    max-width: fit-content;
+    width: 450px;
+    /* max-width: auto; */
   }
 
   .w3-modal-content {
