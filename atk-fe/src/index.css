@@ -483,6 +483,7 @@ a {
   border: none;
   display: block;
   outline: 0;
+  color: #000 !important;
 }
 
 .nav-options-container {
