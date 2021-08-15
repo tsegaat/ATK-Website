@@ -1,5 +1,6 @@
 const express = require('express');
 const emailHandler = require("./emailHandler")
+const path = require('path');
 
 const app = express();
 const PORT = 8000;
@@ -35,4 +36,6 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname+'/atk-fe/build/index.html'))
 });
 
-app.listen(process.env.PORT || PORT, () => console.log('Server is starting on PORT,', PORT));
+const listeningPORT = process.env.PORT || PORT
+
+app.listen(listeningPORT);
