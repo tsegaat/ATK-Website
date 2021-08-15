@@ -23,7 +23,7 @@ class AboutContainer extends React.Component {
                             title="CEO & Founder" 
                             description="Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum."/>
 
-                        <p><a><button href="#contact" className="w3-button w3-light-grey w3-block" >Contact</button></a></p>
+                        <p><a href="#contact"><button className="w3-button w3-light-grey w3-block" >Contact</button></a></p>
                     </div>
 
                     <div className="w3-col l3 m6 w3-margin-bottom">
@@ -31,7 +31,7 @@ class AboutContainer extends React.Component {
                             title="Architect" 
                             description="Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum."/>
                             
-                        <p><button className="w3-button w3-light-grey w3-block">Contact</button></p>
+                        <p><a href="#contact"><button className="w3-button w3-light-grey w3-block">Contact</button></a></p>
                     </div>
 
                     <div className="w3-col l3 m6 w3-margin-bottom">
@@ -39,7 +39,7 @@ class AboutContainer extends React.Component {
                             title="Architect" 
                             description="Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum."/>
                             
-                        <p><button className="w3-button w3-light-grey w3-block">Contact</button></p>
+                        <p><a href="#contact"><button className="w3-button w3-light-grey w3-block">Contact</button></a></p>
                     </div>
 
                     <div className="w3-col l3 m6 w3-margin-bottom">
@@ -47,7 +47,7 @@ class AboutContainer extends React.Component {
                             title="Architect" 
                             description="Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum."/>
                             
-                        <p><button className="w3-button w3-light-grey w3-block">Contact</button></p>
+                        <p><a href="#contact"><button className="w3-button w3-light-grey w3-block">Contact</button></a></p>
                     </div>
                 </div>
             </>
