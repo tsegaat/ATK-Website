@@ -1075,6 +1075,33 @@ a {
 .w3-hover-opacity-off:hover {
   opacity: 1;
 }
+
+.dark-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.project-description {
+  display: none;
+}
+
+.w3-darken-img:hover > .dark-bg {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.5s;
+}
+
+.w3-darken-img:hover > .project-description {
+  display: block;
+  color: #fff;
+  z-index: 2;
+}
+
+.w3-darken-img:hover > .project-name {
+  z-index: 2;
+}
+
 .w3-opacity-max {
   opacity: 0.25;
 }
