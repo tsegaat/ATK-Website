@@ -5,6 +5,10 @@ const app = express();
 const PORT = 8000;
 const bodyParser = require('body-parser');
 
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'atk-fe/build')))
+
 // View engine setup
 app.set('view engine', 'ejs');
 app.use(bodyParser.json()); 
