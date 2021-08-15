@@ -29,4 +29,10 @@ app.post('/email', function(req, res) {
     emailHandler(HTMLpath='./views/emailTemplateClient.html', toEmail=data.Email, dynamicValues=data, cb=res.render("success"))
 });
 
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname+'/atk-fe/build/index.html'))
+});
+
 app.listen(process.env.PORT || PORT, () => console.log('Server is starting on PORT,', PORT));
