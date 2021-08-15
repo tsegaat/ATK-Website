@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Email Sent</title>
+</head>
+
+<style>
+    .container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container:first-child {
+        font-size: 70px;
+    }
+
+    .container:nth-child(1) {
+        margin-top: 20px;
+        font-size: 40px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <span>Email Sent</span>
+        <span>This window will close now</span>
+    </div>
+</body>
+
+<script>
+    setTimeout(() => window.close(), 1000)
+</script>
+
+</html>
