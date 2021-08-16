@@ -33,9 +33,9 @@ const Footer = () => {
             <div className="row mt-3">
               <div className="col-md-4 col-lg-3 col-xl-3 mb-md-0 mb-4" style={{"marginLeft": "auto"}}>
 
-                <h6 className="text-uppercase fw-bold mb-4">
+                <h1 className="text-uppercase fw-bold mb-4" style={{"font-size": "16px"}}>
                   Contact
-                </h6>
+                </h1>
                 <p><i className="fas fa-home me-3"></i> Addis Ababa, Century Mall, ET</p>
                 <p>
                   <a href="mailto:support@atk.com" target="_blank">
