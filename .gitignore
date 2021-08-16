@@ -1,1 +1,5 @@
+# Node modules git ignore
 node_modules
+
+# .env flie git ignore
+.env
