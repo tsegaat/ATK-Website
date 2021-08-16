@@ -3,9 +3,9 @@ const emailHandler = require("./emailHandler")
 const path = require('path');
 
 const app = express();
-const PORT = 8000;
 const bodyParser = require('body-parser');
-
+const dotenv = require('dotenv')
+dotenv.config()
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'atk-fe/build')))
@@ -36,6 +36,6 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname+'/atk-fe/build/index.html'))
 });
 
-const listeningPORT = process.env.PORT || PORT
+const listeningPORT = process.env.PORT
 
 app.listen(listeningPORT);
