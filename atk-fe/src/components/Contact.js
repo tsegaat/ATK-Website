@@ -11,7 +11,7 @@ const Contact = () => {
                     <Form />
                 </div>
                 <div>
-                    <iframe className="iframe-map" width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=century%20mall%20&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                    <iframe className="iframe-map" title="ATK Map View" width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=century%20mall%20&t=&z=15&ie=UTF8&iwloc=&output=embed" 
                     frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
                 </div>       
                 
