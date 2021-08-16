@@ -1,12 +1,14 @@
 const nodemailer = require('nodemailer');
-var handlebars = require('handlebars');
-var fs = require('fs');
+const handlebars = require('handlebars');
+const fs = require('fs');
+const dotenv = require('dotenv')
+dotenv.config()
 
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'jb102493@gmail.com',
-      pass: 'jeffiscool'
+      user: process.env.ADMIN_EMAIL,
+      pass: process.env.ADMIN_PASS
     }
 });
 
