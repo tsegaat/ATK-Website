@@ -2,18 +2,19 @@ import React from 'react';
 
 
 const Form = () => {
-        const nameRef = React.createRef();
-        const emailRef = React.createRef();
-        const subjectRef = React.createRef();
-        const commentRef = React.createRef();
+    const nameRef = React.createRef();
+    const emailRef = React.createRef();
+    const subjectRef = React.createRef();
+    const commentRef = React.createRef();
     const clearInputs = () => {
-        nameRef.current.value = ""
-        emailRef.current.value = ""
-        subjectRef.current.value = ""
-        commentRef.current.value = ""
+        setTimeout(() => {
+            const form = document.querySelector("form")
+            form.reset();
+        }, 2000)
+        
     }
     return(
-            <form action="/email" onSubmit={clearInputs} target="_blank" method="POST">
+            <form action="/contact" onSubmit={clearInputs} target="_blank" method="POST">
                 <input className="w3-input w3-border" type="text" placeholder="Name" required name="Name" ref={nameRef}/>
                 <input className="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email" ref={emailRef}/>
                 <input className="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject" ref={subjectRef}/>

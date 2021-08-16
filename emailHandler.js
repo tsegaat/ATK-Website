@@ -7,17 +7,16 @@ dotenv.config()
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.ADMIN_EMAIL,
-      pass: process.env.ADMIN_PASS
+      user: process.env.TRANSPORTER_EMAIL,
+      pass: process.env.TRANSPORTER_PASS
     }
 });
 
-const emailHandler = (HTMLpath, toEmail='tsega207@gmail.com', dynamicValues={}, cb) => {
+const emailHandler = (HTMLpath, toEmail=process.env.ADMIN_EMAIL, dynamicValues={}, cb) => {
     var readHTMLFile = function(path, callback) {
         fs.readFile(path, {encoding: 'utf-8'}, function (err, html) {
             if (err) {
                 throw err;
-                callback(err);
             }
             else {
                 callback(null, html);
@@ -30,20 +29,18 @@ const emailHandler = (HTMLpath, toEmail='tsega207@gmail.com', dynamicValues={}, 
         var replacements = dynamicValues
         var htmlToSend= template(replacements);
 
-        console.log(htmlToSend)
+        console.log(replacements)
         var mailOptions = {
-            from: 'jb102493@gmail.com',
+            from: process.env.TRANSPORTER_EMAIL,
             to: toEmail,
             subject: 'ATK contact',
             html: htmlToSend ,
-            // text: `Request from ${data.Email} name of the requester is ${data.Name} the subject is ${data.Subject} the comment is ${data.Comment}`
         };
     
         transporter.sendMail(mailOptions, function(error, info){
             if (error) {
                 console.log(error);
             } else {
-                console.log('Email sent: ' + info.response);
                 cb()
             }
         });

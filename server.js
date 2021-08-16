@@ -19,12 +19,12 @@ app.use(express.urlencoded({
 app.use(express.json());
 
 
-app.post('/email', function(req, res) {
+app.post('/contact', function(req, res) {
     var data = req.body;
     console.log(data)    
 
     // This email is for the main admin informing him/her about the contact
-    emailHandler(HTMLpath='./views/emailTemplateAdmin.html', toEmail="tsega207@gmail.com", dynamicValues=data, cb=res.render("success"))   
+    emailHandler(HTMLpath='./views/emailTemplateAdmin.html', toEmail=process.env.ADMIN_EMAIL, dynamicValues=data, cb=res.render("success"))   
 
     // This email is for the client informing him/her that we got the email
     emailHandler(HTMLpath='./views/emailTemplateClient.html', toEmail=data.Email, dynamicValues=data, cb=res.render("success"))
