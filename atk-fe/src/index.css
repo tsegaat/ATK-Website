@@ -914,6 +914,11 @@ a {
 .w3-round-xxlarge {
   border-radius: 32px;
 }
+
+.footer-links {
+  color: #000 !important;
+}
+
 .w3-row-padding,
 .w3-row-padding > .w3-half,
 .w3-row-padding > .w3-third,

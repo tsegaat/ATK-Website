@@ -38,13 +38,13 @@ const Footer = () => {
                 </h1>
                 <p><i className="fas fa-home me-3"></i> Addis Ababa, Century Mall, ET</p>
                 <p>
-                  <a href="mailto:support@atk.com" target="_blank">
+                  <a href="mailto:support@atk.com" target="_blank" className="footer-links">
                     <i className="fas fa-envelope me-3"></i>
                       support@atk.com
                   </a>
                 </p>
-                <p><a href="tel:0930000356"><i className="fas fa-phone me-3"></i> +251 930000356</a></p>
-                <p><a href="tel:0930000570"><i className="fas fa-print me-3"></i> +251 930000570</a></p>
+                <p><a href="tel:0930000356" className="footer-links"><i className="fas fa-phone me-3"></i> +251 930000356</a></p>
+                <p><a href="tel:0930000570" className="footer-links"><i className="fas fa-print me-3"></i> +251 930000570</a></p>
               </div>
             </div>
           </div>
