@@ -223,9 +223,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Robo", Arial, sans-serif;
   font-weight: 400;
   margin: 10px 0;
+  color: #000;
 }
 .w3-wide {
   letter-spacing: 4px;
@@ -915,7 +916,7 @@ a {
   border-radius: 32px;
 }
 .footer-links {
-  color: #000 !important;
+  color: #757575 !important;
 }
 .w3-row-padding,
 .w3-row-padding > .w3-half,
@@ -1677,4 +1678,7 @@ a {
 .w3-border-pale-blue,
 .w3-hover-border-pale-blue:hover {
   border-color: #e7ffff !important;
+}
+.w3-text-underline {
+  text-decoration: underline;
 }

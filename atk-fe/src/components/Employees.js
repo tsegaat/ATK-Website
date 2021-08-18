@@ -8,7 +8,7 @@ const Employees = ({name, img, title, description}) => {
             {/* Employee name */}
             <h3>{name}</h3>
             {/* Employee title */}
-            <p className="w3-opacity">{title}</p>
+            <p class="w3-text-underline">{title}</p>
             {/* Employee description */}
             <p>{description}</p>
         </>
