@@ -723,6 +723,9 @@ a {
   .w3-auto {
     max-width: 95%;
   }
+  .iframe-map {
+    width: 100%;
+  }
 }
 @media (max-width: 600px) {
   .contact-map-col-2 {
@@ -776,6 +779,9 @@ a {
   .w3-modal {
     padding-top: 50px;
   }
+  .iframe-map {
+    width: 100%;
+  }
 }
 @media (min-width: 993px) {
   .w3-modal-content {
@@ -787,10 +793,16 @@ a {
   .w3-sidebar.w3-collapse {
     display: block !important;
   }
+  .iframe-map {
+    width: 100%;
+  }
 }
 @media (max-width: 992px) and (min-width: 601px) {
   .w3-hide-medium {
     display: none !important;
+  }
+  .iframe-map {
+    width: 100%;
   }
 }
 @media (max-width: 992px) {
@@ -803,6 +815,9 @@ a {
   }
   .w3-auto {
     max-width: 100%;
+  }
+  .iframe-map {
+    width: 100%;
   }
 }
 .w3-top,
