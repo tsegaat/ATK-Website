@@ -723,9 +723,6 @@ a {
   .w3-auto {
     max-width: 95%;
   }
-  .iframe-map {
-    width: 100%;
-  }
 }
 @media (max-width: 600px) {
   .contact-map-col-2 {
@@ -792,9 +789,6 @@ a {
   }
   .w3-sidebar.w3-collapse {
     display: block !important;
-  }
-  .iframe-map {
-    width: 100%;
   }
 }
 @media (max-width: 992px) and (min-width: 601px) {
