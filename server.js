@@ -6,9 +6,16 @@ const app = express();
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv')
 dotenv.config()
+const cloudinary = require("cloudinary")
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'atk-fe/build')))
+
+cloudinary.config({
+    cloud_name: process.env.CLOUD_NAME,
+    api_key: process.env.CLOUD_API_KEY,
+    api_secret: process.env.CLOUD_API_SECRET
+});
 
 // View engine setup
 app.set('view engine', 'ejs');
@@ -16,7 +23,7 @@ app.use(bodyParser.json());
 app.use(express.urlencoded({
     extend: false
 }));
-app.use(express.json());
+app.use(express.json())
 
 
 app.post('/contact', function(req, res) {
