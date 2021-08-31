@@ -27,8 +27,7 @@ app.use(express.json())
 
 
 app.post('/contact', function(req, res) {
-    var data = req.body;
-    console.log(data)    
+    var data = req.body;  
 
     // This email is for the main admin informing him/her about the contact
     emailHandler(HTMLpath='./views/emailTemplateAdmin.html', toEmail=process.env.ADMIN_EMAIL, dynamicValues=data, cb=res.render("success"))   
