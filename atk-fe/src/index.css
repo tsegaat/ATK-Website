@@ -719,6 +719,11 @@ a {
   display: inline-block !important;
 }
 
+.emp-img {
+  width: 100%;
+  aspect-ratio: 50/50;
+}
+
 @media (max-width: 1205px) {
   .w3-auto {
     max-width: 95%;

@@ -4,7 +4,7 @@ const Employees = ({name, img, title, description}) => {
     return(
         <>
             {/* Employee photo */}
-            <img src={img} alt={name.split(" ")[0]} style={{"width":"100%"}}/>
+            <img src={img} alt={name.split(" ")[0]} className="emp-img"/>
             {/* Employee name */}
             <h3>{name}</h3>
             {/* Employee title */}
