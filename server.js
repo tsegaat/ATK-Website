@@ -7,7 +7,6 @@ const bodyParser = require('body-parser');
 const dotenv = require('dotenv')
 dotenv.config()
 const cloudinary = require("cloudinary")
-
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'atk-fe/build')))
 
@@ -35,6 +34,7 @@ app.post('/contact', function(req, res) {
     // This email is for the client informing him/her that we got the email
     emailHandler(HTMLpath='./views/emailTemplateClient.html', toEmail=data.Email, dynamicValues=data, cb=res.render("success"))
 });
+
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
