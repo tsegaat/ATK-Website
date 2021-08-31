@@ -20,7 +20,7 @@ class AboutContainer extends React.Component {
             
                 <div className="w3-row-padding">
                     <div className="w3-col l3 m6 w3-margin-bottom">
-                        <Employees name="Amanuel Teshome" img='https://res.cloudinary.com/atk-bi/image/upload/v1630420094/employees/amanuel_teshome.jpg'
+                        <Employees name="Amanuel Teshome" img='https://res.cloudinary.com/atk-bi/image/upload/v1630420094/employees/amanuel teshome.jpg'
                             title="CEO & Founder" 
                             description="Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum."/>
 
